@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="btn.css">
+</head>
+<body>
+    <div class="container" id="containerStyle">
+        <p id =btn_contador >0</p>
+        <div class="botoes">
+            <button class="btn" id = btn_dimNum>Diminuir</button>
+            <button class="btn" id = btn_zerarNum>Zerar</button>
+            <button class="btn" id = btn_aumNum>Aumentar</button>
+            <button class="btn" id = btn_dobrar>Dobrar</button>
+            <button class="btn" id = btn_triplicar>Triplicar</button>
+        </div>
+    </div>
+    <script>
+        // Selecionando Botões
+        const aumNum = document.getElementById("btn_aumNum")
+        const dimNum = document.getElementById("btn_dimNum");
+        const zerarNum = document.getElementById("btn_zerarNum");
+        const dobrar = document.getElementById("btn_dobrar");
+        const triplicar = document.getElementById("btn_triplicar")
+        const contador = document.getElementById("btn_contador");
+        
+        let contagem = 0;
+        contador.innerHTML = contagem;
+
+        aumNum.addEventListener("click", function aumentar(){
+            contador.innerHTML = ++contagem
+        });
+
+        dimNum.addEventListener("click", function diminuir(){
+            contador.innerHTML = contagem =  --contagem
+        });
+        zerarNum.addEventListener("click",function zerar(){
+            contador.innerHTML = contagem = 0;
+        });
+        dobrar.addEventListener("click", function dobrar(){
+            contador.innerHTML = contagem = contagem * 2;
+        });
+        triplicar.addEventListener("click", function triplicar(){
+            contador.innerHTML = contagem = contagem * 3;
+        });
+
+
+    </script>
+</body>
+</html>
