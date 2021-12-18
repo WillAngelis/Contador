@@ -19,6 +19,11 @@ body,html,h1,button,div,p{
 }
 .contador{
   margin-bottom: 1.875rem ;
+  font-weight: 600;
+  font-family: "JetBrains Mono",sans-serif;
+}
+h1{
+  font-size: 10rem;
 }
 .buttons{
   display: flex;
