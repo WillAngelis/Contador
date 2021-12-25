@@ -63,3 +63,14 @@ h1{
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
+@media (min-width: 325px) {
+  .buttons {
+    flex-flow: column;
+  }
+}
+@media (min-width: 768px) {
+  .buttons{
+    flex-flow: row;
+    width: 768px;
+  }
+}
